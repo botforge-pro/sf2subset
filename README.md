@@ -1,5 +1,7 @@
 # sf2subset
 
+[![CI](https://github.com/botforge-pro/sf2subset/actions/workflows/ci.yml/badge.svg)](https://github.com/botforge-pro/sf2subset/actions/workflows/ci.yml)
+
 Trim a [SoundFont 2](https://en.wikipedia.org/wiki/SoundFont) (`.sf2`) down to a chosen set of
 presets, keeping only the instruments and samples those presets use. Bank and program numbers are
 preserved, so code that loads a patch by program number needs no change.
