@@ -16,6 +16,17 @@ general-MIDI bank like [GeneralUser GS](https://schristiancollins.com/generaluse
 Polyphone can do the same by hand in its GUI, but this is a scriptable CLI so shrinking stays part
 of the build and survives a change of instrument set.
 
+## Install
+
+```sh
+go install github.com/botforge-pro/sf2subset@latest
+```
+
+This puts the `sf2subset` binary in `$(go env GOPATH)/bin` (usually `~/go/bin` — make sure it is on
+your `PATH`). Pin a release with `@v0.1.0` instead of `@latest`. For a one-off you don't even need
+to install: `go run github.com/botforge-pro/sf2subset@latest -i in.sf2 -o out.sf2 -p 0,18,81`. Or
+build from a clone with `make build`, which produces `./sf2subset`.
+
 ## Usage
 
 ```sh
