@@ -1,6 +1,6 @@
 BINARY := sf2subset
 
-.PHONY: build test check install clean
+.PHONY: build test check install
 
 build:
 	go build -o $(BINARY) .
@@ -15,6 +15,3 @@ check:
 
 install:
 	go install .
-
-clean:
-	rm -f $(BINARY)
